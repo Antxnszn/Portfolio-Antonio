@@ -1,0 +1,90 @@
+#root {
+  text-align: center;
+}
+
+
+.bg-gradient {
+  background: linear-gradient(120deg, #503A56, #32283c, #151D27, #121B25, #121B25);
+  background-size: 200% 200%;
+  background-attachment: fixed;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.fade-in-r-section {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 2s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-r-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.fade-in-l-section {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 2s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-l-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.fade-in-invert-section {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 2s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-invert-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
