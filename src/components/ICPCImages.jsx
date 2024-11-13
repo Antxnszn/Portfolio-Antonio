@@ -31,7 +31,7 @@ export default function ICPCImages() {
     return(
         <div ref={el => sectionsRef.current[0] = el} className="fade-in-l-section grid grid-col mx-2">
         
-        <img src="../../public/icpcescom.jpg" className="p-10"/>
+        <img src="/icpcescom.jpg" className="p-10"/>
 
         </div>
     );
