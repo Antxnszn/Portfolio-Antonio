@@ -40,7 +40,7 @@ return(
         <div className=' flex flex-col lg:flex-row lg:gap-[2em] mt-10 items-center justify-center'>
           <img ref={el => sectionsRef.current[3] = el} src="/antonioicpc.jpg" alt="" className="fade-in-l-section rounded-lg h-auto w-[280px] lg:w-[320px] mb-10 " />  
           <img ref={el => sectionsRef.current[4] = el} src="/team.jpg" alt="" className="fade-in-section rounded-lg h-auto w-[350px] mb-10 " />
-          <img ref={el => sectionsRef.current[5] = el} src="/microsoftai.JPEG" alt="" className="fade-in-r-section hidden lg:block rounded-lg h-auto w-[330px] mb-10 " />
+          <img ref={el => sectionsRef.current[5] = el} src="/microsoftai.jpeg" alt="" className="fade-in-r-section hidden lg:block rounded-lg h-auto w-[330px] mb-10 " />
         </div>
         <div className='flex flex-col lg:flex-row gap-10 mt-2 items-center justify-center'>
   <img ref={el => sectionsRef.current[6] = el} src="/escom.jpg" alt="" className="fade-in-l-section rounded-lg h-auto w-[400px] mb-10" />
