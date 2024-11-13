@@ -43,7 +43,7 @@ export default function Projects() {
           <a href="https://devinterview.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img 
               
-              src="../../public/devinterview.jpg" 
+              src="/devinterview.jpg" 
               className="w-full max-w-[500px] transition-transform duration-300 hover:scale-110"
               alt="Dev Interview"
             />
@@ -87,7 +87,7 @@ export default function Projects() {
     <div ref={el => sectionsRef.current[4] = el} className="fade-in-r-section overflow-hidden rounded-lg">
       <a href="https://mali-five.vercel.app/" target="_blank" rel="noopener noreferrer">
         <img 
-          src="../../public/maliproject.jpg" 
+          src="/maliproject.jpg" 
           className="w-full max-w-[500px] transition-transform duration-300 hover:scale-110"
           alt="Mali Project"
         />

@@ -90,7 +90,7 @@ useEffect(() => {
             <img
               ref={el => sectionsRef.current[1] = el} 
               className="object-cover rounded-full w-48 h-48 lg:mt-[5em] fade-in-r-section"
-              src="../public/antonio.jpeg"
+              src="/antonio.jpeg"
               alt="Antonio"
             />
             </center>
