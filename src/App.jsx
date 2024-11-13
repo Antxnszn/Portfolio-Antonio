@@ -43,7 +43,7 @@ function App() {
 
   return (
     
-    <main className="min-h-screen mx-10 lg:mx-0">
+    <main className="min-h-screen mx-10 lg:mx-0 max-w-dvw overflow-x-hidden">
       
       <section 
         ref={el => sectionsRef.current[0] = el} 
