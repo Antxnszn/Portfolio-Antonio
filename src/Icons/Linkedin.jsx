@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Linkedin = ({ className = '' }) => (
-  <a href="https://www.linkedin.com/in/antonioestrada02/">
+  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antonioestrada02/">
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +12,7 @@ const Linkedin = ({ className = '' }) => (
     >
       <g
         transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-        fill="#000000"
+        fill="#E9DBED"
         stroke="none"
       >
         <path d="M375 5108 c-123 -23 -257 -122 -317 -234 -62 -114 -58 36 -58 -2314 0 -2341 -4 -2194 56 -2312 34 -67 125 -158 192 -192 118 -60 -28 -56 2309 -56 1521 0 2157 3 2195 11 123 26 262 128 316 234 55 110 52 -41 52 2316 0 2099 -1 2169 -19 2228 -36 115 -126 223 -231 276 -113 57 -1 55 -2315 54 -1302 -1 -2149 -5 -2180 -11z m4405 -179 c72 -34 135 -100 160 -167 20 -53 20 -72 18 -2220 l-3 -2167 -30 -54 c-17 -31 -51 -71 -78 -93 -94 -74 89 -68 -2307 -66 l-2155 3 -50 27 c-60 32 -114 87 -146 148 l-24 45 -3 2150 c-2 2374 -7 2208 61 2297 42 55 103 97 164 114 39 10 457 12 2193 11 l2145 -2 55 -26z"/>

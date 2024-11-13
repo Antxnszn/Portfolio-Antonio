@@ -44,7 +44,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="bg-transparent mb-[6em]">
+    <div className="bg-transparent">
 
       <div className="relative isolate px-6 pt-10 lg:px-8">
         <div
@@ -83,7 +83,7 @@ useEffect(() => {
         </h2>
        
             <p ref={el => sectionsRef.current[0] = el} className="mt-8 text-lg font-light fade-in-l-section text-[#E6EFFA] sm:text-xl/8">
-            I'm Roberto Antonio Navarro Estrada, an Artificial Intelligence Engineering student with a deep passion for algorithms and maths.
+            I'm Roberto Antonio Navarro Estrada, an <span style={{color:"#E0DFFF"}} className='font-semibold'>Artificial Intelligence Engineering student</span> with a deep <span style={{color:"#E0DFFF"}} className='font-semibold'>passion</span> for <span style={{color:"#E0DFFF"}} className='font-semibold'>algorithms and maths</span>.
             </p>
             </div>
             <center>

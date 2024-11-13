@@ -4,7 +4,7 @@ const JavaScript = ({className = ''}) => (
      preserveAspectRatio="xMidYMid meet">
     
     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-    fill="#000000" stroke="none">
+    fill="#E9DBED" stroke="none">
     <path d="M2427 5104 c-89 -19 -165 -53 -241 -108 -33 -24 -509 -494 -1056
     -1043 -1046 -1049 -1032 -1034 -1088 -1181 -24 -61 -26 -80 -26 -212 0 -132 2
     -151 26 -212 56 -148 40 -130 1108 -1199 774 -775 1029 -1025 1075 -1052 33

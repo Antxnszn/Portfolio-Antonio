@@ -6,7 +6,7 @@ const CSS = ({className = ''}) => (
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="#E9DBED" stroke="none">
 <path d="M713 4899 c-18 -5 -40 -21 -50 -35 -10 -17 -44 -183 -93 -471 -85
 -492 -86 -498 -27 -533 31 -20 65 -20 1683 -20 l1651 0 -23 -137 c-13 -76 -26
 -148 -29 -160 l-5 -23 -1666 0 c-1797 0 -1706 3 -1734 -50 -12 -22 -160 -869

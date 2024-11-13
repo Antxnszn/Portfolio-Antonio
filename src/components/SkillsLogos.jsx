@@ -12,26 +12,26 @@ import GitHubprofile from '../Icons/GitHubprofile';
 
 export default function SkillsLogos() {
     return(
-        <div className='flex flex-row items-center justify-center gap-10'>
-      <div className='flex flex-row items-center justify-center'>
-      <div className='grid grid-cols-2 items-center justify-center'>
+      <div className='flex flex-row items-center lg:gap-10 justify-center mx-[2em] lg:mx-[0.5em] mb-[2em] lg:mb-[5em]'>
+      <div className='flex flex-row gap-2'>
+      <div className='grid grid-cols-2 items-center text-left justify-center'>
         <Clogo/>
-        <p  style={{ color: "#E0DFFF" }} className='hidden md:block ml-3'>C</p>
+        <p  style={{ color: "#E9DBED" }} className='hidden md:block ml-3'>C</p>
       </div>
-      <div className="grid grid-cols-2 gap-0 items-center justify-center">
+      <div className="grid grid-cols-2 items-center justify-center">
         <CPPlogo />
-        <p  style={{ color: "#E0DFFF" }} className='hidden md:block '>C++</p>
+        <p  style={{ color: "#E9DBED" }} className='hidden md:block '>C++</p>
       </div>
       </div>
 
-      <div className='flex flex-cols-2 items-center justify-center'>
-      <div className="grid grid-cols-2 items-center justify-center">
+      <div className='flex flex-row gap-1 lg:gap-5'>
+      <div className="grid grid-cols-2 items-center text-left justify-center ">
         <HTMLlogo />
-        <p  style={{ color: "#E0DFFF" }} className='hidden md:block ml-3'>HTML</p>
+        <p  style={{ color: "#E9DBED" }} className='hidden md:block ml-3'>HTML</p>
       </div>
       <div className="grid grid-cols-2 items-center justify-center">
-        <GitHublogo />
-        <p  style={{ color: "#E0DFFF" }} className='hidden md:block ml-3'>GitHub</p>
+        <CSSlogo />
+        <p  style={{ color: "#E9DBED" }} className='hidden md:block ml-3'>CSS</p>
       </div>
       </div>
       </div>
