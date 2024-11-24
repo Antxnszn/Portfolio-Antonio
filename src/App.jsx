@@ -43,7 +43,7 @@ function App() {
 
   return (
     
-    <main className="min-h-screen mx-10 lg:mx-0 max-w-dvw overflow-x-hidden">
+    <main className="min-h-screen mx-10 lg:mx-0 max-w-dvw">
       
       <section 
         ref={el => sectionsRef.current[0] = el} 
@@ -51,11 +51,11 @@ function App() {
       >
         <Jumbotron />
       </section>
-      <header className="sticky top-4 w-full z-50 flex justify-center">
-  <nav className="relative">
+      <header ref={el => sectionsRef.current[1] = el}  className="sticky top-4 w-full z-50 flex justify-center fade-in-section">
+  <nav className="relative mb-10">
     <div
       style={{ color: '#312434', opacity: '80%' }}
-      className="bg-current mt-2 rounded-lg opacity-[100%] hidden w-fit md:block"
+      className="bg-current rounded-lg opacity-[100%] hidden md:block text-xl font-light"
       id="navbar-default"
     >
       <ul
@@ -102,13 +102,13 @@ function App() {
 
       <section id="aboutme" className="grid grid-cols-1 lg:grid-cols-2 justify-center lg:mx-[15em] lg:gap-[8em] mb-10">
         <div 
-          ref={el => sectionsRef.current[1] = el} 
+          ref={el => sectionsRef.current[2] = el} 
           className="fade-in-l-section"
         >
           <InfoCards2 />
         </div>
         <div 
-          ref={el => sectionsRef.current[2] = el} 
+          ref={el => sectionsRef.current[3] = el} 
           className="fade-in-r-section"
         >
           <InfoCards />
@@ -118,21 +118,21 @@ function App() {
 
       <section className="">
         <h2 
-          ref={el => sectionsRef.current[3] = el} className="fade-in-section text-[2.5rem] lg:text-[3.0rem] font-light text-center text-[#E0DFFF] mb-8" 
+          ref={el => sectionsRef.current[4] = el} className="fade-in-section text-[2.5rem] lg:text-[3.0rem] font-light text-center text-[#E0DFFF] mb-8" 
           id="skills"
         >
           Skills
         </h2>
-        <h3 ref={el => sectionsRef.current[4] = el} className='fade-in-section text-[1.5rem] lg:text-[2rem] font-light text-center text-[#E0DFFF] mb-3'>Performing</h3>
+        <h3 ref={el => sectionsRef.current[5] = el} className='fade-in-section text-[1.5rem] lg:text-[2rem] font-light text-center text-[#E0DFFF] mb-3'>Performing</h3>
         <div 
-          ref={el => sectionsRef.current[5] = el}
+          ref={el => sectionsRef.current[6] = el}
           className="fade-in-r-section"
         >
           <SkillsLogos />
         </div>
-        <h3 ref={el => sectionsRef.current[6] = el} className='fade-in-section text-[1.5rem] lg:text-[2rem] font-light text-center text-[#E0DFFF] mb-3'>Learning</h3>
+        <h3 ref={el => sectionsRef.current[7] = el} className='fade-in-section text-[1.5rem] lg:text-[2rem] font-light text-center text-[#E0DFFF] mb-3'>Learning</h3>
         <div 
-          ref={el => sectionsRef.current[7] = el}
+          ref={el => sectionsRef.current[8] = el}
           className="fade-in-l-section"
         >
           <PerformingLogos />

@@ -44,9 +44,9 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="bg-transparent">
+    <div className="bg-transparent ">
 
-      <div className="relative isolate px-6 pt-10 lg:px-8">
+      <div className="relative isolate px-6 pt-10 lg:px-8 ">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
