@@ -43,8 +43,8 @@ return(
           <img ref={el => sectionsRef.current[5] = el} src="/microsoftai.jpg" alt="" className="fade-in-r-section hidden lg:block rounded-lg h-auto w-[330px] mb-10 " />
         </div>
         <div className='flex flex-col lg:flex-row gap-10 mt-2 items-center justify-center'>
-  <img ref={el => sectionsRef.current[6] = el} src="/hackathon.jpg" alt="" className="fade-in-l-section rounded-lg h-auto w-[400px] mb-10" />
-  <img ref={el => sectionsRef.current[7] = el} src="/meta.avif" alt="" className="fade-in-invert-section rounded-lg h-[300px] w-auto mb-10" />
+  <img ref={el => sectionsRef.current[6] = el} src="/hackathon.jpg" alt="" className="fade-in-l-section rounded-lg  w-[350px] lg:w-[320px] mb-10" />
+  <img ref={el => sectionsRef.current[7] = el} src="/meta.avif" alt="" className="fade-in-invert-section rounded-lg w-[350px] lg:w-[320px] mb-10" />
 </div>
 
       </section>
