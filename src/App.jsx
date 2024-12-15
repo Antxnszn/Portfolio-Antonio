@@ -15,6 +15,93 @@ import Footer from './components/Footer';
 
 
 function App() {
+  const canvas = document.getElementById('copitos');
+    const ctx = canvas.getContext('2d');
+
+    let width, height;
+    let snowflakes = [];
+
+    function init() {
+        resize();
+        createSnowflakes();
+        animate();
+    }
+
+    // Adjust canvas size to window size
+    function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resize);
+
+    // Create snowflakes
+    function createSnowflakes() {
+        let count = width / 8; // Slightly increase the number of snowflakes
+        snowflakes = [];
+        for (let i = 0; i < count; i++) {
+            snowflakes.push(new Snowflake());
+        }
+    }
+
+    // Snowflake class
+    function Snowflake() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.radius = Math.random() * 4 + 1; // Variable size (1 to 5 pixels)
+        this.speedX = Math.random() * 1 - 0.5; // Random lateral movement
+        this.speedY = Math.random() * 3 + 1; // Falling speed (1 to 4)
+        this.opacity = Math.random() * 0.5 + 0.3; // Slight transparency
+        this.swing = Math.random() * 2; // Oscillation movement
+        this.swingSpeed = Math.random() * 0.05 + 0.02; // Oscillation speed
+        this.angle = Math.random() * Math.PI * 2; // Initial angle
+    }
+
+    Snowflake.prototype.update = function () {
+        this.angle += this.swingSpeed; // Update angle for oscillation
+        this.x += Math.cos(this.angle) * this.swing + this.speedX; // Oscillation + lateral movement
+        this.y += this.speedY; // Falling
+
+        // Reset snowflake to the top if it goes out of bounds
+        if (this.y > height) {
+            this.y = 0;
+            this.x = Math.random() * width;
+        }
+
+        // Handle lateral out-of-bounds
+        if (this.x > width) {
+            this.x = 0;
+        }
+        if (this.x < 0) {
+            this.x = width;
+        }
+    };
+
+    Snowflake.prototype.draw = function () {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+
+        let gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.radius * 2);
+        gradient.addColorStop(0, 'rgba(200, 200, 200,' + this.opacity + ')');
+        gradient.addColorStop(1, 'rgba(200, 200, 200, 0)');
+
+        ctx.fillStyle = gradient;
+        ctx.fill();
+    };
+
+    // Main animation
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+
+        // Snowflakes
+        snowflakes.forEach((flake) => {
+            flake.update();
+            flake.draw();
+        });
+        requestAnimationFrame(animate);
+    }
+
+    init();
   const sectionsRef = useRef([]);
 
   useEffect(() => {
